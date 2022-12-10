@@ -17,7 +17,7 @@ public class ContactServiceImpl implements IContactService {
 
 	@Override
 	public String saveContact(Contact contact) {
-		return repo.save(contact).getContactId() != null ? "Records Saved Successfully" : "Records not updated";
+		return repo.save(contact).getContactId() != null ? "Records Saved Successfully" : "Records not saved";
 	}
 
 	@Override
